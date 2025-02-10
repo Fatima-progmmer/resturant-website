@@ -294,3 +294,131 @@ footer {
         flex-direction: column;
     }
 }
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero_content h1 {
+        font-size: 48px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .grid {
+        grid-template-areas:
+            "I1 I2"
+            "I3 I4"
+            "I5 I6"
+            "I7 I7";
+        gap: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navi_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+
+    .bar-icon img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero {
+        gap: 30px;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero_content h1 {
+        font-size: 36px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .grid {
+        grid-template-areas:
+            "I1"
+            "I2"
+            "I3"
+            "I4"
+            "I5"
+            "I6"
+            "I7";
+        gap: 10px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer_logo img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_content h1 {
+        font-size: 28px;
+    }
+
+    .hero img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .exploare {
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-areas:
+            "I1"
+            "I2"
+            "I3"
+            "I4"
+            "I5"
+            "I6"
+            "I7";
+        gap: 5px;
+    }
+
+    .news_letter input {
+        width: 100%;
+    }
+}
